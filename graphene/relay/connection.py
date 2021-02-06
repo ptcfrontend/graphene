@@ -39,6 +39,10 @@ class PageInfo(ObjectType):
         name="endCursor",
         description="When paginating forwards, the cursor to continue.",
     )
+    total_count = Int(
+        name="totalCount",
+        description="Total count of items in the queryset",
+    )
 
 
 class ConnectionOptions(ObjectTypeOptions):
